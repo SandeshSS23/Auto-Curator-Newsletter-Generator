@@ -8,8 +8,8 @@ on:
 jobs:
   run-newsletter:
     runs-on: ubuntu-latest
-
-    GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
+    env:
+      GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
 
     steps:
       - name: 🧾 Checkout Repository
