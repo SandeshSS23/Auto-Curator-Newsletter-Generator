@@ -6,11 +6,12 @@ import requests
 
 load_dotenv()
 NEWSAPI_KEY = os.getenv("NEWSAPI_KEY")
+GNEWS_API_KEY = os.getenv("GNEWS_API_KEY")
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MODEL = "llama3-8b-8192"
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
-newsapi = NewsApiClient(api_key=NEWSAPI_KEY)
+newsapi = NewsApiClient(api_key=GNEWS_API_KEY)
 class NewsletterAgent:
     def __init__(self, topics: List[str]):
         self.topics = topics
