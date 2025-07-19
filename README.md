@@ -37,7 +37,6 @@ Create a .env file in the root directory with the following contents:
 .env
 ```
 NEWS_API_KEY=your_newsapi_key
-OPENAI_API_KEY=your_openai_key    # OR use GROQ_API_KEY if using Groq
 GROQ_API_KEY=your_groq_key
 SENDER_EMAIL=your_email@gmail.com
 SENDER_PASS=your_app_password     # Use Gmail App Passwords for secure login
