@@ -30,6 +30,5 @@ jobs:
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
           SENDER_PASS: ${{ secrets.SENDER_PASS }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
         run: |
           python auto_newsletter.py
