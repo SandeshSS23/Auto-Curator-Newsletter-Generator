@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
+      NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
 
     steps:
       - name: 🧾 Checkout Repository
